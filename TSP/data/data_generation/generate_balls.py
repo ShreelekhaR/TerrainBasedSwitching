@@ -65,12 +65,11 @@ for i in range(num_spheres_x):
             spheres_xml += generate_sphere_xml(name, pos) + '\n'
 
 
-# print(spheres_xml)
+
 # print to file
 print("Writing to file...")
 with open("green_spheres.xml", "w") as f:
     f.write(spheres_xml)
 f.close()
-# print to stdout
 
 

@@ -15,3 +15,20 @@ There are 2 types of envs:
 
 ### 2. Gravel
 ![Gravel](images/gravel.png)
+
+## Relevant Files
+```
+
+├── README.md
+├── images
+├── TSP
+│   ├── xml
+│   │   ├── cobblestone_hopper_loose_v1
+│   │   ├── cobblestone_hopper_loose_v1.xml
+│   │   ├── cobblestone_hopper_loose_v2.xml
+│   │   └── gravel_hopper.xml
+│   └── data
+│       └── data_generation
+├── archive (temporary)
+
+```

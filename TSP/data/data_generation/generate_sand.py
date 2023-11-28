@@ -1,7 +1,8 @@
-# # want to create multiple      <body name="ball" pos="0 0 1">
-#     <joint name="ball\_joint" type="free" damping="0.001"/>
-#     <geom name="ball\_geom" size="0.05" type="sphere" density="100"/>
-#     </body> 
+"""
+Generates sand.xml bodies for the gravel environment.
+The sand is generated in a circular dump zone with radius 3, and then
+randomly sampled from this zone.
+"""
 import random
 import numpy as np
 
@@ -48,8 +49,7 @@ for j in range(sand_per_zone):
         sand_xml += generate_sphere_xml(name, pos) + '\n'
 
 
-# print(sand_xml)
-# write to file
+
 with open("sand.xml", "w") as file:
     file.write(sand_xml)
 
