@@ -1,0 +1,59 @@
+tippe_top = """
+<mujoco model="tippe top">
+  <option integrator="RK4"/>
+
+  <asset>
+  <texture name="sand_texture" type="2d" builtin="checker" rgb1=".9 .8 .6" rgb2=".8 .7 .5" width="256" height="256"/>
+  <material name="sand_material" texture="sand_texture" texrepeat="4 4" reflectance="0.2"/>
+  </asset>
+
+  <worldbody>
+    <geom size=".2 .2 .01" type="plane" material="sand_material" friction="3 0.3 0.3"/>
+
+    <geom name="green_sphere1" pos="0 0.0 0.002" size=".005" rgba="0.13 0.145 0.168 1"/>
+    <geom name="green_sphere2" pos="0.01 0.0 0.001" size=".005" rgba="0.13 0.145 0.168 1"/>
+    <geom name="green_sphere3" pos="0.02 0.0 0.001" size=".005" rgba="0.13 0.145 0.168 1"/>
+    <geom name="green_sphere4" pos="0.03 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere5" pos="0.04 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere6" pos="0.05 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere7" pos="0.06 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere8" pos="0.07 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere9" pos="0.08 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere10" pos="0.09 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere11" pos="0.1 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere12" pos="-0.01 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere13" pos="-0.02 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere14" pos="-0.03 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere15" pos="-0.04 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere16" pos="-0.05 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere17" pos="-0.06 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere18" pos="-0.07 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere19" pos="-0.08 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere20" pos="-0.09 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere21" pos="-0.1 0.0 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere22" pos="0.0 0.01 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere23" pos="0.0 0.02 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere24" pos="0.0 0.03 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere25" pos="0.0 0.04 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere26" pos="0.0 0.05 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere27" pos="0.0 0.06 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere28" pos="0.0 0.07 0.001" size=".005" rgba="0 1 0 1"/>
+    <geom name="green_sphere29" pos="0.0 0.08 0.001" size=".005" rgba="0 1 0 1"/>
+
+
+    <light pos="0 0 .6"/>
+    <camera name="closeup" pos="0 -.2 .07" xyaxes="1 0 0 0 1 2"/>
+    <body name="top" pos="0 0 .02">
+      <freejoint/>
+      <geom name="ball" type="sphere" size=".02" />
+      <geom name="stem" type="cylinder" pos="0 0 .02" size="0.004 .008"/>
+      <geom name="ballast" type="box" size=".023 .023 0.005"  pos="0 0 -.015"
+       contype="0" conaffinity="0" group="3"/>
+    </body>
+  </worldbody>
+
+  <keyframe>
+    <key name="spinning" qpos="0 0 0.02 1 0 0 0" qvel="0 0 0 0 1 200" />
+  </keyframe>
+</mujoco>
+"""
