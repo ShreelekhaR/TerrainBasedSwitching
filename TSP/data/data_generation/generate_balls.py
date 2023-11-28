@@ -13,15 +13,15 @@ def generate_random_rgba():
 def generate_sphere_xml(name, pos):
     rgba = generate_random_rgba()
     rgba_str = ' '.join(map(str, rgba))
-    return f'<geom name="{name}" pos="{pos}" size=".005" rgba="{rgba_str}"/>'
+    return f'<geom name="{name}" pos="{pos}" size=".13" rgba="{rgba_str}"/>'
 
 
 
 # Define the size of the square
-square_size = 0.15
+square_size = 4
 
 # Calculate the spacing between spheres
-spacing = 0.01
+spacing = 0.4
 
 # Calculate the number of spheres in each dimension
 num_spheres_x = int(square_size / spacing) + 1
@@ -65,4 +65,12 @@ for i in range(num_spheres_x):
             spheres_xml += generate_sphere_xml(name, pos) + '\n'
 
 
-print(spheres_xml)
+# print(spheres_xml)
+# print to file
+print("Writing to file...")
+with open("green_spheres.xml", "w") as f:
+    f.write(spheres_xml)
+f.close()
+# print to stdout
+
+
