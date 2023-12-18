@@ -76,4 +76,4 @@ Here we include a short video of the TSP agent in action. The agent is trained o
 
 <!-- add mp4 video demo -->
 
-![TSP agent in action](https://img.youtube.com/vi/X2ErCV9k9AE/default.jpg)(https://youtu.be/X2ErCV9k9AE)
+[![TSP agent in action](https://img.youtube.com/vi/X2ErCV9k9AE/default.jpg)](https://youtu.be/X2ErCV9k9AE)
