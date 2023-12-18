@@ -33,14 +33,16 @@ There are 3 types of envs:
 │   │   ├── sandpaper_hopper.xml
 │   │   └── gravel_hopper.xml
 │   ├── notebooks
-│   │   ├── baseline_online_RL.ipynb
-│   │   ├── cobblestone_hopper_loose_v1.ipynb
-│   │   ├── standard_hopper.ipynb
-│   │   ├── sandpaper_hopper.ipynb
-│   │   ├── TSP_oracle.ipynb
-│   │   ├── TSP.ipynb
-│   │   ├── Evaluation.ipynb
-│   │   └── Visualization.ipynb
+|   |   ├── train
+│   │   |   ├── baseline_online_RL.ipynb
+│   │   |   ├── cobblestone_hopper_loose_v1.ipynb
+│   │   |   ├── standard_hopper.ipynb
+│   │   |   ├── sandpaper_hopper.ipynb
+│   │   |   ├── TSP_oracle.ipynb
+│   │   |   └── TSP.ipynb
+│   │   └── test
+│   │       ├── Evaluation.ipynb
+│   │       └── Visualization.ipynb
 │   ├── policies
 │   │   ├── cobblestone_hopper_loose_v1
 │   │   ├── standard_hopper
@@ -72,4 +74,6 @@ There are 3 types of envs:
 
 Here we include a short video of the TSP agent in action. The agent is trained on the cobblestone environment and is tested on the sandpaper environment. The agent is able to adapt to the new environment and perform well.
 
-![TSP agent in action](images/TSP_agent_in_action.gif)
+<!-- add mp4 video demo -->
+
+![TSP agent in action](images/TSP_video.mp4)
