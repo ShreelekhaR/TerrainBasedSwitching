@@ -74,6 +74,9 @@ There are 3 types of envs:
 
 Here we include a short video of the TSP agent in action. The agent is trained on the cobblestone environment and is tested on the sandpaper environment. The agent is able to adapt to the new environment and perform well.
 
-<!-- add mp4 video demo -->
 
-[![TSP agent in action](https://img.youtube.com/vi/X2ErCV9k9AE/default.jpg)](https://youtu.be/X2ErCV9k9AE)
+<!-- [![TSP agent in action](https://img.youtube.com/vi/X2ErCV9k9AE/default.jpg)](https://youtu.be/X2ErCV9k9AE) -->
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=X2ErCV9k9AE" target="_blank">
+ <img src="https://img.youtube.com/vi/X2ErCV9k9AE/hqdefault.jpg" alt="Watch the video" width="400" height="300" />
+</a>
